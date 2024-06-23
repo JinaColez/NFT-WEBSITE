@@ -1,0 +1,32 @@
+.holder {
+    position: relative;
+    display: grid;
+    place-items: center;
+    border: 0px solid;
+    border-radius: 5px;
+    background-color: #2b2a2a;
+    width: 280px;
+    height: 350px;
+    transition: .5s;
+}
+
+.placeholder {
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    border: 0px solid;
+    background-color: aqua;
+    width: 250px;
+    height: 50px;
+}
+
+.attach {
+    position: absolute;
+    bottom: 80px;
+}
+
+.frame:hover{
+     
+    transform: scale(0.9);
+}
+

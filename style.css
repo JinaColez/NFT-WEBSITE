@@ -1,0 +1,395 @@
+/* RODAMAS FONT FACE 🔽 */
+@font-face {
+  font-family: RODAMAS;
+  font-weight: 400;
+  font-style: normal;
+  src: url(assets/fonts/RODAMAS.ttf);
+}
+/* CLASH-GROTESK FONT FACE 🔽 */
+@font-face {
+  font-family: CLASH-B;
+  font-weight: 700;
+  font-style: normal;
+  src: url(assets/fonts/Clash-Grotesk.ttf);
+}
+@font-face {
+  font-family: CLASH-N;
+  font-weight: 400;
+  font-style: normal;
+  src: url(assets/fonts/Clash-Grotesk.ttf);
+}
+/* MEDIA QUERY IMPORT */
+
+* {
+  text-decoration: none;
+
+  color: white;
+}
+body {
+  background-color: #090909;
+  margin: 0 0 0 0;
+}
+
+* body::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.navleftcontainer,
+.navrightcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.navleftcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navrightcontainer img {
+  width: 2rem;
+  margin-right: 30px;
+}
+.navbutton {
+  border: 1px solid;
+  border-radius: 0.3rem;
+  background-color: white;
+  color: #282b30;
+  font-family: CLASH-B;
+  font-size: 1rem;
+  height: 3rem;
+  width: 10rem;
+}
+.logo a {
+  font-size: 2rem;
+  font-family: CLASH-B;
+  color: white;
+  margin-right: 80px;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: white;
+  font-size: 1.5rem;
+  font-family: CLASH-B;
+  margin-right: 70px;
+}
+
+/* THIS PART IS FOR THE INTRODUCTION */
+
+.grid1 {
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(8, 100px);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin-bottom: 100px;
+}
+.item-1 {
+  grid-area: 1 / 1 / 3 / 20;
+}
+.item-2 {
+  grid-area: 3 / 1 / 4 / 20;
+}
+.item-3 {
+  grid-area: 3 / 1 / 6 / 20;
+}
+.item-4 {
+  grid-area: 5 / 1 / 6 / 20;
+}
+.item-5 {
+  grid-area: 7 / 1 / 9 / 20;
+}
+.header-1 {
+  font-size: 9rem;
+  font-family: RODAMAS;
+  letter-spacing: 30px;
+  color: #8b8c8dbb;
+  transform: rotateZ(-4deg);
+  margin-bottom: 10px;
+}
+.header-2 {
+  font-size: 4rem;
+  font-family: CLASH-B;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+.header-3 {
+  font-size: 4rem;
+  font-family: CLASH-B;
+  letter-spacing: 4px;
+}
+.para-1 {
+  font-size: 20px;
+  font-family: CLASH-N;
+  font-weight: 400;
+  width: 1000px;
+  height: 100px;
+  text-align: center;
+}
+.explorebt {
+  border: 1px solid;
+  border-radius: 0.3rem;
+  background-color: white;
+  color: #282b30;
+  font-family: CLASH-B;
+  font-size: 1rem;
+  height: 3rem;
+  width: 10rem;
+}
+/* NFT COLLECTION */
+.grid2 {
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  row-gap: 10px;
+  column-gap: 0.5px;
+  margin: 0 80px 0 80px;
+}
+.anim {
+  transition: 1s;
+   
+}
+.anim:hover{
+    border: 1px solid;
+    transform: scale(.9);
+}
+.image-2 {}
+.image-3 {}
+.image-4 {}
+.image-5 {}
+.image-6 {}
+.image-7 {}
+.image-8 {}
+.image-9 {}
+.image-10 {}
+.image-11 {}
+.image-12 {}
+
+.grid-explore-more {
+  display: grid;
+ grid-template-rows: repeat(1, minmax(100px));
+  grid-template-columns: repeat(auto-fit, minmax(50px));
+  gap: 50px;
+  margin-top: 50px;
+}
+.bt1 {
+  grid-area: 1 / 1 / 1 / 2;
+  justify-self: end;
+  place-items: center;
+}
+.bt2 {
+  grid-area: 1 / 2 / 1 / 3;
+  justify-self: start;
+  place-items: center;
+}
+.morebt {
+  border: 1px solid;
+  border-radius: 0.3rem;
+  background-color: white;
+  color: #282b30;
+  font-family: CLASH-B;
+  font-size: 1rem;
+  height: 3rem;
+  width: 10rem;
+}
+.aboutbt {
+  border: 1px solid;
+  border-radius: 0.3rem;
+  background-color: white;
+  color: #282b30;
+  font-family: CLASH-B;
+  font-size: 1rem;
+  height: 3rem;
+  width: 10rem;
+}
+
+.grid3 {
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(8, 100px);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin-top: 45px;
+}
+.item-1-1 {
+  grid-area: 1 / 1 / 3 / 20;
+}
+.item-1-2 {
+  grid-area: 3 / 1 / 4 / 20;
+}
+.item-1-3 {
+  grid-area: 3 / 1 / 6 / 20;
+}
+.item-1-4 {
+  grid-area: 5 / 1 / 7 / 20;
+}
+.item-1-5 {
+  grid-area: 7 / 1 / 8 /20;
+}
+
+.header-1-1 {
+  font-size: 9rem;
+  font-family: RODAMAS;
+  letter-spacing: 30px;
+  color: #8b8c8dbb;
+  transform: rotateZ(-4deg);
+  margin-bottom: 10px;
+}
+.header-1-2 {
+  font-size: 4rem;
+  font-family: CLASH-B;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+.header-1-3 {
+  font-size: 4rem;
+  font-family: CLASH-B;
+  letter-spacing: 4px;
+}
+.para-1-1 {
+  font-size: 20px;
+  font-family: CLASH-N;
+  font-weight: 400;
+  width: 1000px;
+  height: 100px;
+  text-align: center;
+}
+.aboutusbt {
+  border: 1px solid;
+  border-radius: 0.3rem;
+  background-color: white;
+  color: #282b30;
+  font-family: CLASH-B;
+  font-size: 1rem;
+  height: 3rem;
+  width: 10rem;
+}
+
+/* FULL COLLECTION */
+.grid4 {
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(5, 100px);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin-top: 45px;
+}
+
+.item-2-1 {
+  grid-area: 1 / 1 / 3 / 20;
+}
+.item-2-2 {
+  grid-area: 3 / 1 / 4 / 20;
+}
+.item-2-3 {
+  grid-area: 4 / 1 / 6 / 20;
+}
+
+.header-2-1 {
+  font-size: 9rem;
+  font-family: RODAMAS;
+  letter-spacing: 30px;
+  color: #8b8c8dbb;
+  transform: rotateZ(-4deg);
+  margin-bottom: 10px;
+}
+.header-2-2 {
+  font-size: 4rem;
+  font-family: CLASH-B;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+.para-2-1 {
+  font-size: 20px;
+  font-family: CLASH-N;
+  font-weight: 400;
+  width: 1000px;
+  height: 100px;
+  text-align: center;
+}
+
+.grid5 {
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(1, 701px);
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin-bottom: 100px;
+  gap: 50px;
+}
+.item-3-1 {
+  grid-area: 1 / 1 / 1 / 1;
+}
+
+.item-3-2 {
+  grid-area: 1 / 2 / 1 / 2;
+}
+.box-5-1 {
+  justify-self: end;
+  align-self: end;
+}
+.box-5-2 {
+  justify-self: start;
+  align-self: start;
+}
+
+@media only screen and (max-width: 414px) {
+  .navrightcontainer img {
+    width: 2rem;
+    margin-right: 30px;
+    display: none;
+  }
+
+  .navbutton {
+    border: 1px solid;
+    border-radius: 0.3rem;
+    background-color: white;
+    color: #282b30;
+    font-family: CLASH-B;
+    font-size: 1rem;
+    height: 3rem;
+    width: 10rem;
+    display: none;
+  }
+
+  .logo a {
+    font-size: 2rem;
+    font-family: CLASH-B;
+    color: white;
+    margin-right: 80px;
+  }
+
+  .header-2-1 {
+    font-size: 50px;
+    font-family: RODAMAS;
+    letter-spacing: 20px;
+    color: #8b8c8dbb;
+    transform: rotateZ(-4deg);
+    margin-top: 300px;
+  }
+
+  .header-2-2 {
+    font-size: 25px;
+    font-family: CLASH-B;
+    letter-spacing: 4px;
+    margin-bottom: -70px;
+  }
+
+  .para-2-1 {
+    font-family: CLASH-N;
+    font-size: 15px;
+    width: 100vw;
+    height: 100px;
+    text-align: justify;
+    justify-self: justify;
+  }
+}
