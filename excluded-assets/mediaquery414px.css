@@ -1,4 +1,4 @@
-@import url(card.css);
+ 
 @media only screen and (max-width:414px) {
 .header-1 {
     font-size: 50px;
@@ -32,6 +32,7 @@
     height: 100px;
     text-align: justify;
     justify-self: justify;
+    margin: 0 25px 0 25px;
 }
  
 .gridquery{
@@ -46,8 +47,8 @@
 
     animation: imageSlide 1s ease-in 2s 1 normal;
 }
-.image-1 {
-width:80px;
+.anim{
+width:90px;
 }
 
 @keyframes imageSlide {
@@ -58,13 +59,6 @@ width:80px;
         transform: translateX(0);
     }
 }
-
-
- 
-
- 
-
- 
 
 .header-1-1 {
     font-size: 50px;

@@ -1,11 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="gallery.css" />
+    <title>NFT GALLERY</title>
+  </head>
+  <style>
+    * {
+      color: white;
+    }
+    @import url(excluded-assets/gallery.css);
+    @font-face {
+      font-family: RODAMAS;
+      font-weight: 400;
+      font-style: normal;
+      src: url(assets/fonts/RODAMAS.ttf);
+    }
+    @font-face {
+      font-family: CLASH-B;
+      font-weight: 700;
+      font-style: normal;
+      src: url(assets/fonts/Clash-Grotesk.ttf);
+    }
+    @font-face {
+      font-family: CLASH-N;
+      font-weight: 400;
+      font-style: normal;
+      src: url(assets/fonts/Clash-Grotesk.ttf);
+    }
+    body {
+      background-color: #090909;
+      margin: 0 0 0 0;
+    }
+    .introgrid {
+      display: grid;
+      place-items: center;
+      grid-template-rows: repeat(5, 100px);
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      margin-bottom: 100px;
+    }
+    .homebt {
+      grid-area: 1 / 1 / 2 / 2;
+      place-self: start;
+      align-self: center;
+    }
+    .bthome {
+      position: relative;
+      left: 20px;
+    }
+    .slide {
+      animation: home-button-anim 1s ease-in-out 1s 1 normal both;
+    }
+     .bthome:hover {
+      transform: scale(0.9);
+    }
+    @keyframes home-button-anim {
+      from {
+        transform: translateY(-500px);
+      }
+      to {
+        transform: translateY(0px);
+      }
+    }
+    .introgrid-1-1 {
+      grid-area: 1 / 1 / 3 / 20;
+      place-self: center;
+      align-self: center;
+    }
+    .para-1-1 {
+      font-size: 9rem;
+      font-family: RODAMAS;
+      letter-spacing: 30px;
+      color: #8b8c8dbb;
+      transform: rotateZ(-4deg);
+      margin-bottom: 10px;
+      transition: 150ms;
+      transition-timing-function: ease-in-out;
+      animation: hello 500ms ease-in-out 1s 1 normal both;
+    }
+    @keyframes hello {
+      from {
+        transform: rotateZ(6deg);
+      }
+      to {
+        transform: rotateZ(-4deg);
+      }
+    }
+    .introgrid-1-2 {
+      grid-area: 3 / 1 / 4 / 20;
+    }
+    .para-1-2 {
+      font-size: 4rem;
+      font-family: CLASH-B;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+      transition-timing-function: ease-in-out;
+      animation: boom 500ms ease-in-out 1s 1 normal both;
+    }
+    @keyframes boom {
+      from {
+        transform: scale(-1.1);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+    .introgrid-1-3 {
+      grid-area: 5 / 1 / 6 / 20;
+    }
+    .para-1-3 {
+      font-size: 20px;
+      font-family: CLASH-N;
+      font-weight: 400;
+      width: 1000px;
+      height: 100px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .bthome {
+      border: 1px solid;
+      border-radius: 0.3rem;
+      background-color: white;
+      color: #282b30;
+      font-family: CLASH-B;
+      font-size: 1rem;
+      height: 3rem;
+      width: 10rem;
+      cursor: pointer;
+      transition: 150ms;
+      transition-timing-function: ease-in-out;
+    }
+    .bthome:hover {
+      transform: scale(0.9);
+    }
+    .gallerygrid {
+      display: grid;
+      grid-template-rows: repeat(4, minmax(262px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+      place-items: center;
+      column-gap: 10px;
+      row-gap: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    @media only screen and (min-width: 1366px) {
+      .gallerygrid {
+        display: grid;
+        grid-template-rows: repeat(4, minmax(262px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+        place-items: center;
+        column-gap: -60px;
+        row-gap: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      .image {
+        transition: 150ms;
+        transition-timing-function: ease-in-out;
+      }
+      .image:hover {
+        transform: scale(0.9);
+      }
+      .grid6 {
+        display: grid;
+        place-items: center;
+        grid-template-rows: repeat(1, 100px);
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+
+      .item-6-1 {
+        position: relative;
+        grid-area: 1 / 1 / 1 / 2;
+        place-self: end;
+        align-self: center;
+      }
+      .item-6-2 {
+        position: relative;
+        grid-area: 1 / 2 / 1 / 3;
+        place-self: center;
+        align-self: center;
+      }
+      .item-6-3 {
+        position: relative;
+        grid-area: 1 / 3 / 1 / 4;
+        place-self: center;
+        align-self: center;
+      }
+      .item-6-4 {
+        grid-area: 1 / 4 / 1 / 5;
+        place-self: center;
+        align-self: center;
+      }
+      .item-6-5 {
+        position: relative;
+        grid-area: 1 / 2 / 1 / 3;
+        place-self: center;
+        align-self: center;
+      }
+      .item-6-6 {
+        position: relative;
+        grid-area: 1 / 3 / 1 / 4;
+        place-self: center;
+        align-self: center;
+      }
+      .item-6-7 {
+        position: relative;
+        grid-area: 1 / 4 / 1 / 5;
+        place-self: center;
+        align-self: center;
+      }
+
+      .logo-6-1,
+      .logo-6-2,
+      .logo-6-3 {
+        width: 32px;
+      }
+
+      .head-6-1 {
+        font-family: CLASH-B;
+        font-size: 1.5rem;
+        margin-right: 60px;
+      }
+
+      .opt-6-2,
+      .opt-6-3,
+      .opt-6-4 {
+        position: absolute;
+        font-family: CLASH-B;
+        font-size: 1.1rem;
+        margin-top: -13px;
+        margin-left: 25px;
+        transition: 150ms;
+      }
+
+      .op,
+      .x,
+      .dc {
+        transition: 150ms;
+        animation-timing-function: ease-in-out;
+      }
+      .op:hover,
+      .x:hover,
+      .dc:hover {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+  <body>
+    <div class="introgrid">
+      <div class="homebt">
+        <a class="slide" href="index.html"><button class="bthome">HOME</button></a>
+      </div>
+      <div class="introgrid-1-1"><p class="para-1-1">NFT GALLERY</p></div>
+      <div class="introgrid-1-2"><p class="para-1-2">THE COLLECTION</p></div>
+      <div class="introgrid-1-3">
+        <p class="para-1-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          asperiores dignissimos debitis, mollitia dicta explicabo officia optio
+          vitae eos laudantium reprehenderit, molestias itaque exercitationem
+          dolorum. Quasi, accusamus? Optio, reprehenderit suscipit!
+        </p>
+      </div>
+    </div>
+
+    <div class="gallerygrid">
+      <div class="gal-1-2">
+        <img class="image" src="assets/galleryimages/1.png" />
+      </div>
+      <div class="gal-1-3">
+        <img class="image" src="assets/galleryimages/2.png" />
+      </div>
+      <div class="gal-1-4">
+        <img class="image" src="assets/galleryimages/3.png" />
+      </div>
+      <div class="gal-1-5">
+        <img class="image" src="assets/galleryimages/4.png" />
+      </div>
+      <div class="gal-1-6">
+        <img class="image" src="assets/galleryimages/5.png" />
+      </div>
+      <div class="gal-1-7">
+        <img class="image" src="assets/galleryimages/6.png" />
+      </div>
+      <div class="gal-1-8">
+        <img class="image" src="assets/galleryimages/8.png" />
+      </div>
+      <div class="gal-1-9">
+        <img class="image" src="assets/galleryimages/9.png" />
+      </div>
+      <div class="gal-1-10">
+        <img class="image" src="assets/galleryimages/10.png" />
+      </div>
+      <div class="gal-1-11">
+        <img class="image" src="assets/galleryimages/11.png" />
+      </div>
+      <div class="gal-1-12">
+        <img class="image" src="assets/galleryimages/12.png" />
+      </div>
+      <div class="gal-1-13">
+        <img class="image" src="assets/galleryimages/13.png" />
+      </div>
+      <div class="gal-1-14">
+        <img class="image" src="assets/galleryimages/14.png" />
+      </div>
+      <div class="gal-1-15">
+        <img class="image" src="assets/galleryimages/15.png" />
+      </div>
+      <div class="gal-1-16">
+        <img class="image" src="assets/galleryimages/16.png" />
+      </div>
+      <div class="gal-1-17">
+        <img class="image" src="assets/galleryimages/17.png" />
+      </div>
+      <div class="gal-1-18">
+        <img class="image" src="assets/galleryimages/18.png" />
+      </div>
+      <div class="gal-1-19">
+        <img class="image" src="assets/galleryimages/19.png" />
+      </div>
+      <div class="gal-1-20">
+        <img class="image" src="assets/galleryimages/20.png" />
+      </div>
+      <div class="gal-1-21">
+        <img class="image" src="assets/galleryimages/21.png" />
+      </div>
+      <div class="gal-1-22">
+        <img class="image" src="assets/galleryimages/22.png" />
+      </div>
+      <div class="gal-1-23">
+        <img class="image" src="assets/galleryimages/23.png" />
+      </div>
+      <div class="gal-1-24">
+        <img class="image" src="assets/galleryimages/24.png" />
+      </div>
+      <div class="gal-1-25">
+        <img class="image" src="assets/galleryimages/25.png" />
+      </div>
+      <div class="gal-1-26">
+        <img class="image" src="assets/galleryimages/26.png" />
+      </div>
+      <div class="gal-1-27">
+        <img class="image" src="assets/galleryimages/27.png" />
+      </div>
+      <div class="gal-1-28">
+        <img class="image" src="assets/galleryimages/28.png" />
+      </div>
+      <div class="gal-1-29">
+        <img class="image" src="assets/galleryimages/29.png" />
+      </div>
+    </div>
+
+    <footer>
+      <div class="grid6">
+        <div></div>
+        <div class="item-6-2">
+          <a href="https://twitter.com/JINACLZ"
+            ><p class="opt-6-2 x">TWITTER</p></a
+          >
+        </div>
+        <div class="item-6-3">
+          <a href="https://opensea.io/collection/p-u-n-k-z"
+            ><p class="opt-6-3 op">OPENSEA</p></a
+          >
+        </div>
+        <div class="item-6-4">
+          <a href="https://discord.com/"><p class="opt-6-4 dc">DISCORD</p></a>
+        </div>
+        <div class="item-6-5">
+          <a href="https://twitter.com/JINACLZ"
+            ><img class="logo-6-1 x" src="assets/logo/Xlogo.png"
+          /></a>
+        </div>
+        <div class="item-6-6">
+          <a href="https://opensea.io/collection/p-u-n-k-z"
+            ><img class="logo-6-2 op" src="assets/logo/opensealogo.png"
+          /></a>
+        </div>
+        <div class="item-6-7">
+          <a href="https://discord.com/">
+            <img class="logo-6-3 dc" src="assets/logo/discordlogo.png"
+          /></a>
+        </div>
+        <div></div>
+      </div>
+    </footer>
+  </body>
 </html>

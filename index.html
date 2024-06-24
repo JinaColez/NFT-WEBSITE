@@ -3,26 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CyberPunks</title>
+    <title>CyberPunkz</title>
     <!-- FONT OL RODAMAS, NEUE HELVETICA 900,  -->
     <link
       href="https://fonts.cdnfonts.com/css/rodamas?styles=37168"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       href="https://fonts.cdnfonts.com/css/helvetica-neue-5?styles=103500"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <!-- FONT AWESOME LINK -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css"
       integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+    
   </head>
   <style>
     /* MEDIA QUERY */
@@ -37,9 +35,18 @@
           <a href="index.html">C Y B E R P U N K z</a>
         </div>
         <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">BLOG</a></li>
-          <li><a href="">PAGES</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li>
+            <a href="">PAGES</a>
+            <ul class="dropdown">
+              <li ><a href="blog.html" class="dm">- BLOG</a></li>
+              <li ><a href="about.html" class="dm">- ABOUT US</a></li>
+              <li ><a href="nftgallery.html" class="dm">- NFT GALLERY</a></li>
+              <li ><a href="https://opensea.io/collection/p-u-n-k-z" class="dm">- BROWSE</a></li>
+            </ul>
+          </li>
+          
         </ul>
       </div>
       <div class="navrightcontainer">
@@ -50,7 +57,7 @@
         <a href="https://rarible.com">
             <img src="assets/logo/rariblelogo.png" alt=""/>
         </a>
-        <a href=""><button class="navbutton">NFT COLLECTION</button></a>
+        <a class="slide" href="nftgallery.html"><button class="navbutton">NFT COLLECTION</button></a>
       </div>
     </nav>
     <!-- FIRTS PAGE -->
@@ -77,64 +84,64 @@
 
     <!-- IMAGE OF NFT COLLECTION -->
     <!-- PARENT CONTAINER (MANAGES THE WHOLE DIV PAGE) -->
-    <div id="collection" class="grid2 gridquery">
-      <div class="holder">
-        <img class="image-1 anim" src="assets/nftImages/1.png" />
-      </div>
+    <section id="collection" class="grid2 gridquery">
+        <div class="holder block">
+          <img class="image-1 anim" src="assets/nftImages/1.png" />
+        </div>
 
-      <div class="holder">
-        <img class="image-2 anim" src="assets/nftImages/2.png" />
-      </div>
+        <div class="holder block">
+          <img class="image-2 anim" src="assets/nftImages/2.png" />
+        </div>
 
-      <div class="holder">
-        <img class="image-3 anim" src="assets/nftImages/3.png" />
-      </div>
+        <div class="holder block">
+          <img class="image-3 anim" src="assets/nftImages/3.png" />
+        </div>
 
-      <div class="holder">
-        <img class="image-4 anim" src="assets/nftImages/4.png" />
-      </div>
+        <div class="holder block">
+          <img class="image-4 anim" src="assets/nftImages/4.png" />
+        </div>
 
-      <div class="holder">
-        <img class="image-5 anim" src="assets/nftImages/5.png" />
-      </div>
+        <div class="holder block">
+          <img class="image-5 anim" src="assets/nftImages/5.png" />
+        </div>
 
-      <div class="holder">
-        <img class="image-6 anim" src="assets/nftImages/6.png" />
-      </div>
+        <div class="holder block">
+          <img class="image-6 anim" src="assets/nftImages/6.png" />
+        </div>
 
-      <div class="holder">
-        <img class="image-7 anim" src="assets/nftImages/7.png" />
-      </div>
+        <div class="holder block">
+          <img class="image-7 anim" src="assets/nftImages/7.png" />
+        </div>
 
-      <div class="holder">
-        <img class="image-8 anim" src="assets/nftImages/8.png" />
-      </div>
+        <div class="holder block">
+          <img class="image-8 anim" src="assets/nftImages/8.png" />
+        </div>
 
-      <div class="holder">
-        <img class="image-9 anim" src="assets/nftImages/9.png" />
-      </div>
+        <div class="holder block">
+          <img class="image-9 anim" src="assets/nftImages/9.png" />
+        </div>
 
-      <div class="holder">
-        <img class="image-10 anim" src="assets/nftImages/10.png" />
+        <div class="holder block" >
+          <img class="image-10 anim" src="assets/nftImages/10.png" />
+        </div>
+        <div class="holder block" >
+          <img class="image-11 anim" src="assets/nftImages/11.png" />
+        </div>
+        <div class="holder block" >
+          <img class="image-12 anim" src="assets/nftImages/12.png" />
+        </div>
+    </section>
+      <div class="grid-explore-more">
+        <div class="bt1">
+          <a href="#about"><button class="aboutbt">ABOUT</button></a>
+        </div>
+        <div class="bt2">
+          <a href=""><button class="morebt">MORE</button></a>
+        </div>
       </div>
-      <div class="holder">
-        <img class="image-11 anim" src="assets/nftImages/11.png" />
-      </div>
-      <div class="holder">
-        <img class="image-12 anim" src="assets/nftImages/12.png" />
-      </div>
-    </div>
-    <div class="grid-explore-more">
-      <div class="bt1">
-        <a href="#about"><button class="aboutbt">ABOUT</button></a>
-      </div>
-      <div class="bt2">
-        <a href=""><button class="morebt">MORE</button></a>
-      </div>
-    </div>
 
     <!-- SECOND PAGE -->
-    <div id="about" class="grid3">
+    <section id="about" class="grid3">
       <div class="item-1-1"><p class="header-1-1">ABOUT US</p></div>
       <div class="item-1-2"><p class="header-1-2">THE #1 CYBERPUNK</p></div>
       <div class="item-1-3"><p class="header-1-3">NFT COLLECTION</p></div>
@@ -153,10 +160,10 @@
       <div>
         <!-- Images -->
       </div>
-    </div>
+    </section>
 
     <!-- THIRD PAGE -->
-    <div class="grid4">
+    <section class="grid4">
       <div class="item-2-1"><p class="header-2-1">COLLECTION</p></div>
       <div class="item-2-2"><p class="header-2-2">FULL COLLECTION ON</p></div>
       <div class="item-2-3">
@@ -167,9 +174,9 @@
           aliquid libero numquam maxime.
         </p>
       </div>
-    </div>
+    </section>
 
-    <div class="grid5">
+    <section class="grid5">
       <div class="box-5-1 box item-3-1">
         <div class="inner-box">
           <div class="item-box-1">
@@ -219,9 +226,23 @@
           <img class="image-1-1" src="assets/otherimages/2.png" />
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- FOURTH PAGE FOOTER -->
-    <div></div>
+  <footer>
+      <div class="grid6">
+      <div></div>
+      <div class="item-6-2"><p class="opt-6-2 x">TWITTER</p></div>
+      <div class="item-6-3"><p class="opt-6-3 op">OPENSEA</p></div>
+      <div class="item-6-4"><p class="opt-6-4 dc">DISCORD</p></div>
+      <div class="item-6-5"> <img class="logo-6-1 x" src="assets/logo/Xlogo.png"></div>
+      <div class="item-6-6"><img class="logo-6-2 op" src="assets/logo/opensealogo.png"></div>
+      <div class="item-6-7"><img class="logo-6-3 dc" src="assets/logo/discordlogo.png"></div>
+      <div></div>
+    </div>
+  </footer>
+    
+
   </body>
+  <script src="script.js"></script>
 </html>

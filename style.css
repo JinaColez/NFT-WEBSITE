@@ -22,18 +22,23 @@
 
 * {
   text-decoration: none;
-
   color: white;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: #090909;
   margin: 0 0 0 0;
 }
 
-* body::-webkit-scrollbar {
-  display: none;
-  scroll-behavior: smooth;
+body::-webkit-scrollbar {
+  display: none; 
+  
 }
+/* ANIMATION */
+
+
 /* NAVBAR */
 
 .navbar {
@@ -53,10 +58,40 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.dm{
+  font-family: CLASH-B;
+  font-size: 1rem;
+}
+ul li ul.dropdown li{
+  display: block;
+}
+.dropdown{
+  width: 200px;
+  height: 110px;
+  background-color: #8b8c8d2f;
+  line-height: 25px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.dm:hover{
+  color: #8b8c8dbb;
+}
+ul li:hover ul.dropdown{
+  
+  display:block;
+}
 
 .navrightcontainer img {
   width: 2rem;
   margin-right: 30px;
+  transition: 150ms;
+  transition-timing-function: ease-in-out;
+}
+.navrightcontainer img:hover{
+  transform: scale(1.2);
 }
 .navbutton {
   border: 1px solid;
@@ -67,7 +102,26 @@ body {
   font-size: 1rem;
   height: 3rem;
   width: 10rem;
+  cursor: pointer;
+  transition: 150ms;
 }
+.slide{
+  transition-timing-function: ease-in-out;
+  animation: nav-button-anim 1s ease-in-out 1s 1 normal both;
+}
+.navbutton:hover{
+  transform: scale(.9);
+}
+@keyframes nav-button-anim {
+  from{
+    transform: translateY(-500px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
+
 .logo a {
   font-size: 2rem;
   font-family: CLASH-B;
@@ -94,6 +148,7 @@ li a {
   grid-template-rows: repeat(8, 100px);
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   margin-bottom: 100px;
+  overflow-x: hidden;
 }
 .item-1 {
   grid-area: 1 / 1 / 3 / 20;
@@ -110,6 +165,7 @@ li a {
 .item-5 {
   grid-area: 7 / 1 / 9 / 20;
 }
+
 .header-1 {
   font-size: 9rem;
   font-family: RODAMAS;
@@ -117,7 +173,21 @@ li a {
   color: #8b8c8dbb;
   transform: rotateZ(-4deg);
   margin-bottom: 10px;
+  transition: 150ms;
+  transition-timing-function: ease-in-out;
+  animation: hello 500ms ease-in-out 1s 1 normal both;
+
 }
+@keyframes hello {
+  from{
+    transform: rotateZ(6deg);
+  }
+  to{
+  transform: rotateZ(-4deg);
+  }
+
+}
+ 
 .header-2 {
   font-size: 4rem;
   font-family: CLASH-B;
@@ -129,6 +199,20 @@ li a {
   font-family: CLASH-B;
   letter-spacing: 4px;
 }
+.header-2,.header-3{
+  transition-timing-function: ease-in-out;
+  animation: boom 500ms ease-in-out 1s 1 normal both;
+}
+@keyframes boom {
+  from{
+    transform: scale(-1.1);
+  }
+  to{
+  transform: scale(1);
+  }
+
+}
+
 .para-1 {
   font-size: 20px;
   font-family: CLASH-N;
@@ -144,8 +228,14 @@ li a {
   color: #282b30;
   font-family: CLASH-B;
   font-size: 1rem;
+  letter-spacing: 5px;
   height: 3rem;
   width: 10rem;
+  animation-timing-function: ease-in-out;
+  transition: 150ms;
+}
+.explorebt:hover {
+  transform: scale(0.9);
 }
 /* NFT COLLECTION */
 .grid2 {
@@ -156,33 +246,27 @@ li a {
   row-gap: 10px;
   column-gap: 0.5px;
   margin: 0 80px 0 80px;
+ 
 }
 .anim {
-  transition: 1s;
-   
+  animation-timing-function: ease-in-out;
+  transition: 150ms;
 }
-.anim:hover{
-    border: 1px solid;
-    transform: scale(.9);
+.anim:hover {
+  border: 1px solid;
+  color: #fff;
+  transform: scale(0.9);
+  
 }
-.image-2 {}
-.image-3 {}
-.image-4 {}
-.image-5 {}
-.image-6 {}
-.image-7 {}
-.image-8 {}
-.image-9 {}
-.image-10 {}
-.image-11 {}
-.image-12 {}
+
 
 .grid-explore-more {
   display: grid;
- grid-template-rows: repeat(1, minmax(100px));
+  grid-template-rows: repeat(1, minmax(100px));
   grid-template-columns: repeat(auto-fit, minmax(50px));
   gap: 50px;
-  margin-top: 50px;
+  margin-top: 100px;
+  
 }
 .bt1 {
   grid-area: 1 / 1 / 1 / 2;
@@ -203,6 +287,8 @@ li a {
   font-size: 1rem;
   height: 3rem;
   width: 10rem;
+  animation-timing-function: ease-in-out;
+  transition: 150ms;
 }
 .aboutbt {
   border: 1px solid;
@@ -213,6 +299,12 @@ li a {
   font-size: 1rem;
   height: 3rem;
   width: 10rem;
+  animation-timing-function: ease-in-out;
+  transition: 150ms;
+}
+.morebt:hover,
+.aboutbt:hover {
+  transform: scale(0.9);
 }
 
 .grid3 {
@@ -393,3 +485,97 @@ li a {
     justify-self: justify;
   }
 }
+
+/* FOOTER */
+.grid6 {
+   
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(1, 100px);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  
+}
+
+ 
+.item-6-1 {
+  position: relative;
+  grid-area: 1 / 1 / 1 / 2;
+  place-self: end;
+  align-self: center;
+   
+}
+.item-6-2 {
+  position: relative;
+  grid-area: 1 / 2 / 1 / 3;
+  place-self: center;
+  align-self: center;
+}
+.item-6-3 {
+  position: relative;
+  grid-area: 1 / 3 / 1 / 4;
+  place-self: center;
+  align-self: center;
+}
+.item-6-4 {
+  grid-area: 1 / 4 / 1 / 5;
+  place-self: center;
+  align-self: center;
+  
+}
+.item-6-5 {
+  position: relative;
+  grid-area: 1 / 2 / 1 / 3;
+  place-self: center;
+  align-self: center;
+}
+.item-6-6 {
+  position: relative;
+  grid-area: 1 / 3 / 1 / 4;
+  place-self: center;
+  align-self: center;
+}
+.item-6-7 {
+  position: relative;
+  grid-area: 1 / 4 / 1 / 5;
+  place-self: center;
+  align-self: center;
+}
+ 
+
+
+.logo-6-1,
+.logo-6-2,
+.logo-6-3 {
+  width: 32px;
+}
+
+.head-6-1{
+   font-family: CLASH-B;
+   font-size: 1.5rem;
+    margin-right: 60px;
+}
+ 
+.opt-6-2
+,.opt-6-3,.opt-6-4{
+  position: absolute;
+  font-family: CLASH-B;
+   font-size: 1.1rem;
+   margin-top: -13px;
+   margin-left: 25px;
+   transition: 150ms;
+}
+
+.op,.x,.dc{
+  transition: 150ms;
+  animation-timing-function: ease-in-out;
+}
+.op:hover,.x:hover,.dc:hover{
+  transform: scale(1.1);
+}
+
+ 
+
+
+
+ 
+ 
